@@ -14,8 +14,7 @@ html {
 }
 
 body {
-  font-family: var(--font-roboto);
-
+  font-family: var(--font-opensans);
   margin: 0;
 }
 
@@ -26,6 +25,7 @@ body {
 }
 
 .title {
+  font-family: var(--font-roboto);
   font-size: 48px;
   line-height: 0.66;
   font-weight: 900;
@@ -44,28 +44,53 @@ body {
 }
 
 /* HEADER */
-.page-header {
+.header {
   min-height: 50px;
+  background-color: #19bb9b;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
 }
 
 .list-item {
   display: flex;
 }
 
-.top-header {
+.auth-list {
   display: flex;
-}
-
-.list-item:nth-child(2) {
   margin-left: auto;
 }
 
-.nav {
+.header .link {
+  display: block;
+  font-weight: 300;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #fefefe;
+}
+
+/* SITE NAV */
+.main-site-nav {
+  min-height: 90px;
+}
+
+.site-nav {
   display: flex;
   align-items: center;
 }
 
+.nav-list {
+  display: flex;
+  margin-left: auto;
+}
+
 .logo {
+  font-family: var(--font-roboto);
   font-size: 30px;
   font-weight: 300;
   line-height: 1.06;
@@ -80,11 +105,6 @@ body {
   font-weight: 900;
 }
 
-.nav-list {
-  display: flex;
-  margin-left: auto;
-}
-
 .nav-link {
   display: block;
   color: #0f0101;
@@ -96,18 +116,32 @@ body {
   text-decoration: none;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 40px;
+  padding-bottom: 35px;
 }
 
-.nav-item .nav-link:last-child {
-  /* padding-right: 0; */
+/* BANNER */
+.banner {
+  height: 600px;
+  background-image: url('../images/main_foto.png');
+
+  background-color: #181818;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--nav-color);
+.banner-title {
+  font-size: 48px;
+  color: #fffcfc;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 400;
 }
+
+.banner .first {
+  font-family: var(--font-roboto);
+  font-weight: 300;
+}
+
+/* ABOUT */
 
 /* GALLERY */
 .gallery {
@@ -232,10 +266,4 @@ body {
   padding-bottom: 20px;
   padding-right: 45px;
   padding-left: 45px;
-}
-
-.blog-list .link:hover,
-.blog-list .link:focus {
-  color: #fff;
-  background-color: #7fd9c7;
 }
