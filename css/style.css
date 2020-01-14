@@ -56,7 +56,10 @@ body {
 
 .list-item {
   display: flex;
-  align-items: center;
+}
+
+.list-item .item {
+  text-align: center;
 }
 
 .tel,
@@ -65,23 +68,25 @@ body {
 }
 
 .tel::before {
-  display: inline-block;
+  display: inline-flex;
   content: '';
-  height: 15px;
+  height: 20px;
   width: 20px;
   margin-right: 5px;
   background-image: url('../images/icon_phone.png');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .email::before {
-  display: inline-block;
+  display: inline-flex;
   content: '';
-  height: 15px;
+  height: 20px;
   width: 20px;
   margin-right: 5px;
   background-image: url('../images/icon_email.png');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .auth-list {
@@ -90,7 +95,7 @@ body {
 }
 
 .page-nav .link {
-  display: block;
+  display: flex;
   font-weight: 300;
   text-decoration: none;
   padding-left: 15px;
@@ -158,6 +163,7 @@ body {
   background-image: url('../images/main_foto.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: #181818;
 }
 
